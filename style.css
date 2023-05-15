@@ -113,6 +113,10 @@ body{
     /*border: 2px solid blue;*/
     width: 50vw;
 }
+
+.color{
+    background-color: rgb(113, 153, 204);
+}
 footer{
     display: flex;
     background-color: rgb(9, 71, 73);
