@@ -12,7 +12,7 @@
     
     <header>
         <nav class="navbar bg-dark">
-            <div class="container-fluid">
+            <div class=" d-flex container-fluid">
                 <div id="logo">
                     <a class="navbar-brand text-light" href="./index.html">
                         <img src="./images/codoacodo.png" alt="Logo" width="150" height="100" class="d-inline-block align-text-top">
@@ -124,7 +124,7 @@
         </section>
 
         <section id="se_orador" class="form">
-            <form class="textform text-center">
+            <form class="textform text-center ">
                 <p class="text-uppercase">conviértete en un</p> 
                 <p class="fw-bold text-uppercase fs-3">orador</p>
                 <label>Anótate como orador para dar una </label> <label class="text-decoration-underline"> charla ignite.</label> <label>Cuentanos de que quieres hablar!</label>
@@ -132,14 +132,14 @@
                 
                 <div class="row pt-3">
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
                     </div>
                 </div>
                 <div class="mb-3 pt-4">
-                    <textarea placeholder="Sobre qué quieres hablar?" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea placeholder="Sobre qué quieres hablar?" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                 </div>
                 <div id="emailHelp" class="form-text pb-4 d-flex justify-content-start">
                     <label>Recuerda incluir un título para tu charla</label>

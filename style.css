@@ -27,7 +27,6 @@ body{
 .texts{
     padding-top: 10%;
     color: aliceblue;
-   /* border: 2px solid red;*/
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -36,7 +35,6 @@ body{
 .text{
     width: 40vw;
     height: 50vh;
-    /*border: 2px solid blue;*/
     justify-content:end;
     align-content: flex-end;
     align-self: flex-end;
@@ -58,7 +56,6 @@ body{
 #titles h3{
     font-size:xx-large;
 }
-
 
 /*BLOQUE DE TEXTO E IMAGEN*/
 .image-text{
@@ -96,7 +93,6 @@ body{
 }
 /*bloque de form*/
 .form{
-    /*border: 3px solid red;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,3 +122,37 @@ footer{
     justify-content: space-around;
     padding-top: 2%;
 }
+
+@media only screen and (max-width:1312px){
+    #tarjetas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjeta{
+        margin-top: 20px;
+    }
+/*PLAYA CON TEXTO*/
+    #fecha{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fecha img, .onlytext{
+        width: 100vw;
+    }
+
+    footer{
+        display: flex;
+        height: 10vh;
+    }
+    .final{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+
