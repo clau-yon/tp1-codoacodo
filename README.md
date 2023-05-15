@@ -5,4 +5,3 @@ Link https://clau-yon.github.io/tp1-codoacodo/
 * Html
 * Css
 * Boostrap
-* Javascript
