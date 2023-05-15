@@ -1,8 +1,22 @@
 body{
     margin: 0;
     padding: 0;
+    position: relative;
+    margin-bottom: 100px; /* Altura del footer */
+    min-height: 100vh;
+  
+}
+/*NAV*/
+#logo a{
+    display: flex;
+    align-items: center;
+  
 }
 /*BANNER*/
+#ticket{
+    text-decoration: none;
+    color: aliceblue;
+}
 .banner{
     background: rgba(7, 6, 6, 0.7) url("./images/ba1.jpg");
     background-size: cover;
@@ -45,19 +59,12 @@ body{
 #titles h3{
     font-size:xx-large;
 }
-
+/*
 .cards{
     display: flex;
+    margin-right: 300px;
     align-items: center;
-   /* border: 2px solid blue;*/
-    justify-content: center;
-    padding-left: 50px;
-}
-
-.carta{
-    display: flex;
-    justify-content: center;
-}
+}*/
 
 /*BLOQUE DE TEXTO E IMAGEN*/
 .image-text{
@@ -84,26 +91,39 @@ body{
 .onlytext p{
     font-size: larger;
 }
+/*PAGINA TICKETS*/
+#tarjetas{
+    margin-top: 50px;
+    display: flex;
+}
 
+#tarjetas .tarjeta{
+    margin-left: 20px;
+}
 /*bloque de form*/
 .form{
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-top: 30px;
 }
 
 .textform{
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     width: 50vw;
 }
 footer{
     display: flex;
     background-color: rgb(9, 71, 73);
     flex-direction: column;
-    height: 12vh;
-    margin-top: 30px;
+    /*height: 12vh;*/
+    /*margin-top: 30px;*/
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; 
 }
 
 .final{

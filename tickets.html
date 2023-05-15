@@ -44,35 +44,34 @@
     </header>
 
     <main>
-        <section>
-            <div class="card border-primary mb-3" style="width: 18rem;">
-                <div class="card-body">
+        <div class="d-flex ms-4 justify-content-center" id="tarjetas">
+            <div class="card border-primary mb-3 tarjeta" style="width: 18rem;">
+                <div class="card-body text-center">
                 <h5 class="card-title">Estudiante</h5>
                 <p class="card-text">Tienen un descuento</p>
-                <p class="card-text">80%</p>
+                <p class="card-text fw-bolder">80%</p>
                 <p class="card-text"><small class="text-body-secondary">*presentar documentación</small></p>
                 </div>
             </div>
 
-            <div class="card border-secondary mb-3" style="width: 18rem;">
-                <div class="card-body">
-                <h5 class="card-title">Trainee</h5>
+            <div class="card border-secondary mb-3 tarjeta" style="width: 18rem;">
+                <div class="card-body text-center">
+                <h5 class="card-title text-center">Trainee</h5>
                 <p class="card-text">Tienen un descuento</p>
-                <p class="card-text">50%</p>
+                <p class="card-text fw-bolder">50%</p>
                 <p class="card-text"><small class="text-body-secondary">*presentar documentación</small></p>
                 </div>
             </div>
 
-            <div class="card border-warning mb-3" style="width: 18rem;">
-                <div class="card-body">
+            <div class="card border-warning mb-3 tarjeta" style="width: 18rem;">
+                <div class="card-body text-center">
                 <h5 class="card-title">Junior</h5>
                 <p class="card-text">Tienen un descuento</p>
-                <p class="card-text">15%</p>
+                <p class="card-text fw-bolder">15%</p>
                 <p class="card-text"><small class="text-body-secondary">*presentar documentación</small></p>
                 </div>
             </div>
-        </section>
-
+        </div>
 
 
 
@@ -94,11 +93,14 @@
                 </div>
                 
 
-                <div class="col-md-6">
-                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
-                    <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Correo">
-             
-                    <label for="inputState" class="form-label">Categoria</label>
+                <div class="col-12">
+                    <input type="email" class="form-control form-control-sm mt-4" id="colFormLabelSm" placeholder="Correo">
+                </div>
+
+
+
+             <div>
+                    <label for="inputState" class="form-label d-flex justify-content-start">Categoria</label>
                     <select id="inputState" class="form-select">
                       <option selected>Estudiante</option>
                       <option>Trainne</option>
@@ -107,8 +109,10 @@
                 
                 </div>
 
-                <button type="submit" class="btn btn-success">Borrar</button>
-                <button type="submit" class="btn btn-success">Resumen</button>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-success">Borrar</button>
+                    <button class="btn btn-success">Resumen</button>
+                </div>
             </form>
         </section>
     </main>
