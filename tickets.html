@@ -73,44 +73,45 @@
 
 
 
-        <section class="form">
-            <form class="textform text-center">
+        <section class="form" id="comprar">
+            <form class="textform text-center" action="#" method="post">
                 <p class="text-uppercase">venta</p> 
                 <p class="fw-bold text-uppercase fs-2">valor de ticket $200</p>
                 <div class="row">
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
+                        <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                        <input type="text" name="apellido" id="apellido" class="form-control" required placeholder="Apellido">
                     </div>
                 </div>
             
                 <div class="col-12">
-                    <input type="email" class="form-control mt-4" id="colFormLabelSm" placeholder="Correo" required>
+                    <input type="email" class="form-control mt-4" id="colFormLabelSm" placeholder="Correo">
                 </div>
 
                 <div class="row mt-3">
                     <div class="col">
                         <label for="inputState" class="form-label d-flex justify-content-start">Cantidad</label>
-                        <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
+                        <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calcularPrecioFinal()" class="form-control" required placeholder="Cantidad de Entradas">
+                        <small>Precio por Entrada $200</small>
                     </div>
                     <div class="col">
                         <label for="inputState" class="form-label d-flex justify-content-start">Categoria</label>
-                        <select id="inputState" class="form-select">
-                          <option selected>Estudiante</option>
-                          <option>Trainne</option>
-                          <option>Junior</option>
-                        </select>
+                        <select class="form-select" name="porcDescuento" id="porcDescuento" onchange="calcularPrecioFinal()" >
+                            <option value="80">Estudiante</option>
+                            <option value="50">Trainne</option>
+                            <option value="15">Junior</option>
+                        </select>      
                     </div>
-                </div>
-
-                <div class="col-12">
-                    <input type="text" class="bg-info form-control mt-4 color" id="colFormLabelSm" placeholder="Total a pagar: $">
+                    <div class="col-md mb-3">
+                        <input type="text" name="precioFinal" id="precioFinal" class="form-control bg-info form-control mt-4 color" disabled placeholder="Costo de entradas">
+                        <div id="precioFinal2" class="bg-secondary text-light p-1 rounded">Precio Final</div>
+                    </div>
                 </div>
                 <div class="d-flex justify-content-evenly mt-4">
                     <button class="btn btn-success">Borrar</button>
-                    <button class="btn btn-success">Resumen</button>
+                    <input  type="submit" value="Comprar" class="btn btn-success"">
                 </div>
             </form>
         </section>
@@ -126,7 +127,7 @@
             <li>Estudiantes</li>
         </ul>
     </footer>
-
+    <script src="./integradorBool.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
