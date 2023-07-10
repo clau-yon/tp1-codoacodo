@@ -27,3 +27,15 @@ function calcularPrecioFinal() {
     document.getElementById("precioFinal2").innerHTML=precioFin;
     document.getElementById("precioFinal2").style.display="none";
 }
+
+function eliminar(){
+    let nombreBlanco = document.getElementById("nombre");
+    nombreBlanco.value="";
+    let appelidoBlanco = document.getElementById("apellido");
+    appelidoBlanco.value="";
+    let emailBlanco = document.getElementById("colFormLabelSm");
+    emailBlanco.value="";
+    let entradasBlanco= document.getElementById("cantEntradas");
+    entradasBlanco.value= "";
+    console.log(entradasBlanco);
+}
